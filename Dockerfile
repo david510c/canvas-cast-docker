@@ -10,6 +10,7 @@ RUN git https://github.com/david510c/canvas-cast.git
 WORKDIR /canvas-cast
 
 RUN npm install
+RUN npm run build
 
 ENTRYPOINT ["npm", "run"]
 CMD ["parcel", "./src/index.html"]
